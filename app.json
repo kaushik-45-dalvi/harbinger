@@ -1,30 +1,54 @@
 {
   "expo": {
     "name": "Harbinger",
-    "slug": "Harbinger",
+    "slug": "harbinger",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/splash-harbinger.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFF8F0"
     },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#FFF8F0",
+          "image": "./assets/splash-harbinger.png",
+          "resizeMode": "cover",
+          "imageWidth": 1242,
+          "enableFullScreenImage_legacy": true,
+          "dark": {
+            "backgroundColor": "#0D0705",
+            "image": "./assets/splash-harbinger.png"
+          }
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.harbinger.healthcopilot"
     },
     "android": {
+      "package": "com.harbinger.healthcopilot",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FF6600"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "Harbinger",
+      "shortName": "Harbinger",
+      "themeColor": "#FF6600",
+      "backgroundColor": "#FFF8F0"
     }
   }
 }
